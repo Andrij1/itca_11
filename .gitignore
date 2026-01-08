@@ -224,4 +224,6 @@ __marimo__/
 *.env
 secret_keys/
 9_Train/
+1_Project_ONE/
 hello.py
+
