@@ -19,18 +19,19 @@ def run():
     filename = "phone_book.json"
     book = read_book_as_json(filename)
     
-    while True:    
-        try:        
-            phone_book_loaded = read_book_as_json(filename)
-            if phone_book_loaded is None:
-                phone_book_loaded = []
-        except FileNotFoundError:
+    try:        
+        phone_book_loaded = read_book_as_json(filename)
+        if phone_book_loaded is None:
             phone_book_loaded = []
-            print('File Not Found Error')
+    except FileNotFoundError:
+        phone_book_loaded = []
+        print('File Not Found Error')
 
-        phone_book = [c for c in phone_book_loaded if c is not None]
-        phone_book_loaded = sorted(phone_book, key=lambda x: x['second_name'])
-        contact = phone_book_loaded[0] if phone_book_loaded else None
+    phone_book = [c for c in book if c is not None]
+    phone_book_loaded = sorted(phone_book, key=lambda x: x['second_name'])
+    
+    while True:    
+
     
         choice = input('\n            MENU :'
                        '\n"1" - print the phone book \n'
@@ -243,13 +244,9 @@ def tests():
     assert all(c.get("second_name") != search_s_name for c in book)
     
 # ---------- display contact() test
-    printed = False
-    for idx, d in enumerate(book):
-        display_contact(book[1])
-        printed = True
-        break    
-    assert printed is not None        
-    display_book(book)
+    display_contact(book[1])      
+    assert book[1] is not None        
+
 
 
 if __name__ == "__main__":    
