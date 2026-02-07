@@ -16,19 +16,17 @@ from helper_phone_book_A_Panchenko import (
     )
 
 def run():
-    filename = "phone_book.json"
-    book = read_book_as_json(filename)
+    filename = "phone_book.json"    
     
     try:        
-        phone_book_loaded = read_book_as_json(filename)
-        if phone_book_loaded is None:
-            phone_book_loaded = []
+        book = read_book_as_json(filename)
+        if book is None:
+            book = []
     except FileNotFoundError:
-        phone_book_loaded = []
+        book = []
         print('File Not Found Error')
 
-    phone_book = [c for c in book if c is not None]
-    phone_book_loaded = sorted(phone_book, key=lambda x: x['second_name'])
+    phone_book_loaded = sorted([c for c in book if c is not None], key=lambda x: x['second_name'])
     
     while True:    
 
