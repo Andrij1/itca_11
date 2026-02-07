@@ -15,6 +15,7 @@ from helper_phone_book_A_Panchenko import (
     display_book
     )
 
+
 def run():
     filename = "phone_book.json"    
     
@@ -26,10 +27,9 @@ def run():
         book = []
         print('File Not Found Error')
 
-    phone_book_loaded = sorted([c for c in book if c is not None], key=lambda x: x['second_name'])
-    
+    phone_book_loaded = sorted([c for c in book if c is not None],
+                               key=lambda x: x['second_name'])    
     while True:    
-
     
         choice = input('\n            MENU :'
                        '\n"1" - print the phone book \n'
@@ -244,7 +244,6 @@ def tests():
 # ---------- display contact() test
     display_contact(book[1])      
     assert book[1] is not None        
-
 
 
 if __name__ == "__main__":    
