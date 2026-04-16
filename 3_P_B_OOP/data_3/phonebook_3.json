@@ -1,0 +1,42 @@
+[
+    {
+        "firstname": "HELEN",
+        "lastname": "KRUGER",
+        "numbers": [
+            [
+                "mobile",
+                "+3405"
+            ],
+            [
+                "work",
+                "+0123"
+            ],
+            [
+                "home",
+                "+2340"
+            ]
+        ],
+        "email": "helen_kruger@siemens.com",
+        "address": "DE, Bonn, Blumenstrasse, 88/22"
+    },
+    {
+        "firstname": "Kevin",
+        "lastname": "Smith",
+        "numbers": [
+            [
+                "mobile",
+                "345"
+            ],
+            [
+                "work",
+                "123"
+            ],
+            [
+                "home",
+                "234"
+            ]
+        ],
+        "email": "kSmith@delta.ua",
+        "address": "US, CA, L.Angeles, Burbank ave., 1123"
+    }
+]
