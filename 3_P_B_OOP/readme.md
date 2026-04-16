@@ -45,6 +45,4 @@ SQLite
 
 Changes are saved only when exiting with QS.
 
-Notes
-Make sure the data_3/ folder exists
-Quitting with 0 discards changes
+
