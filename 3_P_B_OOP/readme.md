@@ -1,7 +1,7 @@
 PhoneBook CLI Application
 
-A simple command-line phone book application for managing contacts with
-support for multiple storage formats (JSON, CSV, SQLite).
+An OOP-based command-line phone book application for managing contacts, 
+with support for multiple storage formats (JSON, CSV, SQLite).
 
 Features
 Add, view, search, edit, and delete contacts
