@@ -9,9 +9,9 @@ from finder import find_contact
 def main():       
 
     phonebook = PhoneBook()
-    json_storage = JsonStorage("data/phonebook.json")    
-    csv_storage = CSVStorage("data/phonebook.csv")
-    db_storage = DBStorage("data/phonebook.sqlite")
+    json_storage = JsonStorage("data/book.json")
+    csv_storage = CSVStorage("data/book.csv")
+    db_storage = DBStorage("data/book.sqlite")
     storages = MultiStorage([json_storage, csv_storage, db_storage])
     
     try:
