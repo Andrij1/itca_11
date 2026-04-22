@@ -9,17 +9,17 @@ Persistent storage using JSON files
 Simple command-line interface
 
 Project Structure
-main_pb.py            # Entry point
-helper_pb.py          # Core logic and helper functions
+main.py            # Entry point
+helper.py          # Core logic and helper functions
 
-phone_book.json       # Main storage file
-phone_book_tests.json # Test storage file
+book.json       # Main storage file
+book_tests.json # Test storage file
 
 Usage
 
 Run the application:
 
-python main_pb.py
+python main.py
 
 Menu
 1 — Show all contacts

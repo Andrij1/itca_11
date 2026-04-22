@@ -15,9 +15,10 @@ finder.py          # Search functionality
 cli.py             # CLI helpers
 
 converters.py      # Data converters
-storages_3.py      # Storage implementations
+storages.py      # Storage implementations
 
-data_3/            # Storage files
+data/            # Storage files
+tests/           # Storage of pytests
 Usage
 
 Run the application:
