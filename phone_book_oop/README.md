@@ -4,10 +4,13 @@ An OOP-based command-line phone book application for managing contacts,
 with support for multiple storage formats (JSON, CSV, SQLite).
 
 Features
+
 Add, view, search, edit, and delete contacts
 Store multiple phone numbers (mobile, work, home)
 Save data in JSON, CSV, and SQLite simultaneously
+
 Project Structure
+
 main.py            # Entry point
 contact.py         # Contact model
 book.py            # PhoneBook logic
@@ -15,16 +18,19 @@ finder.py          # Search functionality
 cli.py             # CLI helpers
 
 converters.py      # Data converters
-storages.py      # Storage implementations
+storages.py        # Storage implementations
 
-data/            # Storage files
-tests/           # Storage of pytests
+data/              # Storage of book files
+tests/             # Storage of pytest files
+
 Usage
 
 Run the application:
 
 python main.py
-Menu
+
+Menu:
+
 1 — Show all contacts
 2 — Search
 3 — Edit name
@@ -36,6 +42,7 @@ Menu
 9 — New phone book
 QS — Save and quit
 0 — Quit without saving
+
 Storage
 
 Data is loaded and saved using a multi-storage system:
@@ -45,5 +52,3 @@ CSV
 SQLite
 
 Changes are saved only when exiting with QS.
-
-
