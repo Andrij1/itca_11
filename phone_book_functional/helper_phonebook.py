@@ -163,5 +163,3 @@ def create_phone_book_cli():
     contact = add_contact_cli(book)
     
     return book
-
-    

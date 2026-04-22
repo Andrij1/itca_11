@@ -1,6 +1,5 @@
-
 from contact import Contact
-from storages_3 import MultiStorage, JsonStorage, CSVStorage, DBStorage
+from storages import MultiStorage, JsonStorage, CSVStorage, DBStorage
 from converters import JsonConverter, CSVConverter, DBConverter
 
 class PhoneBook:
@@ -60,6 +59,4 @@ class PhoneBook:
 
     def __str__(self):
         return '\n' + '\n'.join(str(c) for c in self.book)
-
     
-

@@ -128,4 +128,4 @@ class Contact:
                 f"Contact(first={self.firstname!r}, second={self.lastname!r}, "
                 f"numbers={self.numbers!r}, email={self.email!r}, address={self.address!r})"
                 )
-
+    

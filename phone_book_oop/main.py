@@ -1,7 +1,7 @@
 from contact import Contact
 from book import PhoneBook
 from converters import JsonConverter, CSVConverter, DBConverter
-from storages_3 import MultiStorage, JsonStorage, CSVStorage, DBStorage
+from storages import MultiStorage, JsonStorage, CSVStorage, DBStorage
 from cli import CliBook
 from finder import find_contact
 
@@ -9,9 +9,9 @@ from finder import find_contact
 def main():       
 
     phonebook = PhoneBook()
-    json_storage = JsonStorage("data_3/phonebook_3.json")    
-    csv_storage = CSVStorage("data_3/phonebook_3.csv")
-    db_storage = DBStorage("data_3/phonebook_m_3.sqlite")
+    json_storage = JsonStorage("data/phonebook.json")    
+    csv_storage = CSVStorage("data/phonebook.csv")
+    db_storage = DBStorage("data/phonebook.sqlite")
     storages = MultiStorage([json_storage, csv_storage, db_storage])
     
     try:

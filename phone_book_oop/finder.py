@@ -1,4 +1,3 @@
-
 def find_contact(phonebook):
     
     firstname = input('Enter firstname :\n-> ').strip()
