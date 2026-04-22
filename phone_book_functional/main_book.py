@@ -17,7 +17,7 @@ from helper_book import (
 
 
 def run():
-    filename = "phone_book.json"    
+    filename = "book.json"
     
     try:        
         book = read_book_as_json(filename)
@@ -200,7 +200,7 @@ def run():
         
 
 def tests():        
-    filename = "phone_book_tests.json"
+    filename = "book_tests.json"
     book = read_book_as_json(filename)
     contact = [d for d in book]
     for contact in book:
