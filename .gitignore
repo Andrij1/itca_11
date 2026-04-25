@@ -1,10 +1,8 @@
-# Python
+# Python, Distribution
+.Python
 __pycache__/
 *.py[codz]
 *$py.class
-
-# Distribution
-.Python
 
 # PyInstaller
 *.manifest
@@ -13,6 +11,31 @@ __pycache__/
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+
+# IPython
+profile_default/
+ipython_config.py
+.pdm-python
+.pdm-build/
+.pixi
+
+# PyBuilder
+.pybuilder/
+target/
+
+# PEP 582
+__pypackages__/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Pytype static type analyzer
+.pytype/
 
 # Unit test
 htmlcov/
@@ -41,22 +64,8 @@ staticfiles/
 instance/
 .webassets-cache
 
-# PyBuilder
-.pybuilder/
-target/
-
 # Jupyter Notebook
 .ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-.pdm-python
-.pdm-build/
-.pixi
-
-# PEP 582
-__pypackages__/
 
 # Environments
 .env
@@ -68,17 +77,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
 
 # Cython debug symbols
 cython_debug/
