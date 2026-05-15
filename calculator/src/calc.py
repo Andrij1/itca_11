@@ -78,7 +78,4 @@ class Calculator:
             elif self.operator == '%':
                 result_temp += float(self.var1) % float(self.var2)
 
-        except Exception:
-            result = result_temp
-
         return result
