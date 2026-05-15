@@ -15,7 +15,6 @@ String-based expression evaluation.
 Project Structure:
 calculator/
 __init__.py
-buttons.py
 calculator.py
 README.md
 
