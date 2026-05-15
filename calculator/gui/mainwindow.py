@@ -4,13 +4,10 @@ from src.calc import Calculator
 
 class MainWindow(QMainWindow):
     def __init__(self):
-        super().__init__()  # QMainWindow frame called (size, methods, frame, events)
-        self.ui = Ui_MainWindow()   # the Q frame customizing, own ui object started
-                                    # the methods inherited, not actual ui i-face
-        self.ui.setupUi(self)   # creates buttons, layouts, attaches to MainWindow, physically
-                                # the real widgets are set up here, attached to MainWindow i-face
-        self.calc = Calculator()    # Calculator started, using the above I-face
-                                    # math logic attached
+        super().__init__()
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
+        self.calc = Calculator()
         btns_nums = [
             'BTN_0', 'BTN_1', 'BTN_2', 'BTN_3', 'BTN_4',
             'BTN_5', 'BTN_6', 'BTN_7', 'BTN_8', 'BTN_9',
@@ -54,10 +51,6 @@ class MainWindow(QMainWindow):
         self.ui.Display.setText(self.calc.collected)
 
 
-    #def on_mark(self, value):
-        #self.ui.Display.setText(str(value))
-
-
     def on_clear_last(self):
         self.calc.clear_last_variable()
         self.ui.Display.setText(self.calc.operator)
@@ -69,6 +62,5 @@ class MainWindow(QMainWindow):
 
 
     def on_calc(self):
-        #self.ui.Display.setText('=')
         result = self.calc.calculate()
         self.ui.Display.setText(str(result))
