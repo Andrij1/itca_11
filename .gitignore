@@ -94,7 +94,10 @@ Thumbs.db
 # Data or local files
 *.db
 *.env
+*.spec
 secret_keys/
 9_Train/
 1_Project_ONE/
 hello.py
+dist/
+build/
