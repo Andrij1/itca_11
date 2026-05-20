@@ -7,18 +7,22 @@ Features
 
 Add, view, search, edit, and delete contacts
 Store multiple phone numbers (mobile, work, home)
+Edit email and address fields
 Save data in JSON, CSV, and SQLite simultaneously
 
 Project Structure
 
 main.py            # Entry point
-contact.py         # Contact model
-book.py            # PhoneBook logic
-finder.py          # Search functionality
-cli.py             # CLI helpers
+app_setup.py       # Application setup (loads PhoneBook + storages)
 
-converters.py      # Data converters
-storages.py        # Storage implementations
+choice.py          # Main menu loop (controller / command router)
+choice_handler.py  # CLI menu + user input handling
+cli.py             # Contact creation (CLI input logic)
+
+contact.py         # Contact model
+book.py            # PhoneBook logic (in-memory storage + operations)
+converters.py      # Data converters (JSON / CSV / DB formats)
+storages.py        # Storage implementations (MultiStorage, JSON, CSV, SQLite)
 
 data/              # Storage of book files
 tests/             # Storage of pytest files

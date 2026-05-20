@@ -1,6 +1,5 @@
 from contact import Contact
 
-
 class JsonConverter:    
     
     @staticmethod

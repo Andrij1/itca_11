@@ -1,23 +1,30 @@
 [
     {
-        "firstname": "HELEN",
-        "lastname": "KRUGER",
+        "firstname": "---",
+        "lastname": "",
+        "numbers": [],
+        "email": null,
+        "address": null
+    },
+    {
+        "firstname": "HELLEN",
+        "lastname": "SWARTZ",
         "numbers": [
             [
                 "mobile",
-                "+3405"
+                "+001---HELEN"
             ],
             [
                 "work",
-                "+0123"
+                "+002---HELEN"
             ],
             [
                 "home",
-                "+2340"
+                "+003---HELEN"
             ]
         ],
-        "email": "helen_kruger@siemens.com",
-        "address": "DE, Bonn, Blumenstrasse, 88/22"
+        "email": "H_S@b-l-u-m-e-n.de",
+        "address": "BONN, STRASSE, 252525"
     },
     {
         "firstname": "Kevin",
@@ -38,5 +45,25 @@
         ],
         "email": "kSmith@delta.ua",
         "address": "US, CA, L.Angeles, Burbank ave., 1123"
+    },
+    {
+        "firstname": "Lao",
+        "lastname": "Zi",
+        "numbers": [
+            [
+                "mobile",
+                "Tao"
+            ],
+            [
+                "work",
+                "De"
+            ],
+            [
+                "home",
+                "Tzin"
+            ]
+        ],
+        "email": "---",
+        "address": "---"
     }
 ]

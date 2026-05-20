@@ -1,3 +1,5 @@
 firstname,lastname,numbers,email,address
-HELEN,KRUGER,mobile:+3405;work:+0123;home:+2340,helen_kruger@siemens.com,"DE, Bonn, Blumenstrasse, 88/22"
+---,,,,
+HELLEN,SWARTZ,mobile:+001---HELEN;work:+002---HELEN;home:+003---HELEN,H_S@b-l-u-m-e-n.de,"BONN, STRASSE, 252525"
 Kevin,Smith,mobile:345;work:123;home:234,kSmith@delta.ua,"US, CA, L.Angeles, Burbank ave., 1123"
+Lao,Zi,mobile:Tao;work:De;home:Tzin,---,---

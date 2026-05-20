@@ -7,9 +7,9 @@ class CliBook:
         self.cli_book = []
         
 
-    def create_contact_cli(self, firstname = None, lastname = None):
+    def create_contact_cli(self, firstname=None, lastname=None):
 
-        if firstname is None:              
+        if firstname is None:
             self.firstname = input('Enter the first name: ').strip()
         else:
             self.firstname = firstname
@@ -50,7 +50,7 @@ class CliBook:
         return self.contact
 
 
-    def create_phone_book_cli(self):    
+    def create_phone_book_cli(self, phonebook):
         self.add_contact_cli(phonebook)
         
         return phonebook.book
