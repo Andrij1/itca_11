@@ -9,23 +9,20 @@ class MultiStorage:
     def __init__(self, storages):
         self.storages = storages
 
+
     def uniques(self, contacts):
         return sorted(
             set(contacts),
             key=lambda c: (c.firstname.lower(), c.lastname.lower())
         )
 
-    def contacts_sorted(self, contacts):
-        return sorted(
-            self.uniques(contacts),
-            key=lambda c: (c.firstname.lower(), c.lastname.lower())
-        )
 
     def write(self, contacts):
-        sorted_contacts = self.contacts_sorted(contacts)
+        sorted_contacts = self.uniques(contacts)
         for storage in self.storages:
             storage.write(sorted_contacts)
         return sorted_contacts
+
 
     def load(self):
         all_contacts = []
@@ -44,6 +41,7 @@ class JsonStorage:
         with open(self.filename, "w") as f:
             json.dump(data, f, indent=4)
 
+
     def load(self):
         try:
             with open(self.filename, "r") as f:
@@ -58,12 +56,14 @@ class CSVStorage:
     def __init__(self, filename):
         self.filename = filename
 
+
     def write(self, contacts):
         with open(self.filename, "w", newline="") as f:
             writer = csv.writer(f)
             writer.writerow(["firstname", "lastname", "numbers", "email", "address"])
             for c in contacts:
                 writer.writerow(CSVConverter.to_row(c))
+
 
     def load(self):
         try:
@@ -80,6 +80,7 @@ class DBStorage:
     def __init__(self, filename):
         self.filename = filename
 
+
     def create_table(self):
         self.connection = sqlite3.connect(self.filename)
         with self.connection as conn:
@@ -95,6 +96,7 @@ class DBStorage:
             """)
             conn.commit()
 
+
     def write(self, contacts):
         self.create_table()
         with self.connection as conn:
@@ -108,6 +110,7 @@ class DBStorage:
             """, data)
 
             conn.commit()
+
 
     def load(self):
         self.create_table()
