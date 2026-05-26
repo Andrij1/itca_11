@@ -75,9 +75,13 @@ The application uses a multi-storage architecture:
 - CSV storage
 - SQLite database
 
+---
+
 ## Preview
 
 ![Phonebook Screenshot](phonebook.png)
+
+---
 
 ### Behavior
 - Data is loaded on startup
