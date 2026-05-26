@@ -75,7 +75,7 @@ python calculator.py
 
 ## Preview
 
-![Calculator Screenshot](images/calculator.png)
+![Calculator Screenshot](./images/calculator.png)
 
 ## Installation
 
