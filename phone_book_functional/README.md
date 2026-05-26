@@ -1,27 +1,44 @@
-PhoneBook CLI Application
+# PhoneBook CLI Application
 
-A function-based command-line phone book application for managing contacts,
-with support for JSON storage.
+A command-line phone book application built with Python using a function-based
+architecture. It allows users to manage contacts with persistent JSON storage.
 
-Features
-Add, view, search, edit, and delete contacts
-Persistent storage using JSON files
-Simple command-line interface
+---
 
-Project Structure
+## Features
+
+- Add, view, search, edit, and delete contacts
+- Persistent storage using JSON files
+- Simple and interactive command-line interface
+- Automatic saving after every modification
+
+---
+
+## Project Structure
+
+```text
 main.py            # Entry point
 helper.py          # Core logic and helper functions
 
-book.json       # Main storage file
-book_tests.json # Test storage file
+book.json          # Main storage file
+book_tests.json    # Test storage file
+```
 
-Usage
+---
+
+## Usage
 
 Run the application:
 
+```bash
 python main.py
+```
 
-Menu
+---
+
+## Menu Options
+
+```text
 1 — Show all contacts
 2 — Search contacts
 3 — Edit first name
@@ -31,8 +48,14 @@ Menu
 7 — Add contact
 8 — Create a new phone book
 Q — Quit the application
-ANY — Continue
+ANY — Return to menu / continue
+```
 
-Storage
-Data is stored in a JSON file
-Changes are saved automatically after each modification
+---
+
+## Storage
+
+- Contacts are stored in JSON format
+- All changes are saved automatically after each operation
+- Data persists between program runs
+```
