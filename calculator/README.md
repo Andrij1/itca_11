@@ -1,46 +1,93 @@
-PySide6 Calculator Application
+# Calculator Application
 
-An object-oriented-programming based GUI calculator built
-with Python and PySide6.
-Uses a modular structure with separated UI and calculation logic.
+A desktop graphical user interface  calculator application built with PySide6 
+and Python using object-oriented programming principles. 
+The project separates interface from calculation logic for a more modular architecture.
 
-Features:
-Basic arithmetic operations (+, -, *, /, %, √).
-Decimal input support.
-Clear (C) and backspace (X).
-Qt Designer UI integration (.ui files).
-Event-driven button handling.
-String-based expression evaluation.
+## Purpose
 
-Project Structure:
+This project was created to practice:
+
+- Object-oriented programming
+- GUI development with PySide6
+- Qt Designer integration
+- Event-driven programming
+- Separation of concerns in application design
+
+## Features
+
+- Basic arithmetic operations (`+`, `-`, `*`, `/`)
+- Modulo (`%`) and square root (`√`) support
+- Decimal number input
+- Clear (`C`) and backspace (`X`) controls
+- Event-driven GUI using PySide6 signals and slots
+- Qt Designer integration through `.ui` files
+- Modular architecture separating UI and logic
+- String-based expression parsing and evaluation
+
+## Project Structure
+
+```text
 calculator/
-__init__.py
-calculator.py
-README.md
+│
+├── calculator.py
+├── README.md
+│
+├── gui/
+│   ├── __init__.py
+│   ├── mainwindow.py
+│   ├── ui_mainwindow.py
+│   └── ui_calculator.ui
+│
+├── images/
+│   └── calculator.png
+│
+└── src/
+    ├── __init__.py
+    └── calc.py
+```
 
-gui/
-__init__.py
-mainwindow.py
-ui_mainwindow.py
-ui_calculator.ui
+## Usage
 
-src/
-__init__.py
-calc.py
+Run the application:
 
-Usage:
-Run the application - python calculator.py.
+```bash
+python calculator.py
+```
 
-Architecture:
-gui/ — UI layer (PySide6 windows, signals, events),
-src/ — calculation logic (Calculator class),
-calculator.py — application entry point.
+## Architecture
 
-Logic:
-Expression is built as a string.
-Calculator evaluates full expression.
-UI sends button input, displays result.
+- `gui/` — User interface layer built with PySide6
+- `images/` — Application screenshot
+- `src/` — Core calculation logic and expression handling
+- `calculator.py` — Application entry point
 
-Requirements:
-PySide6.
-Python 3.10+.
+## Logic
+
+- Expression is built as a string. 
+- Calculator evaluates full expression.
+- UI sends button input, displays result.
+
+## Requirements
+
+- PySide6
+- Python 3.10+
+
+## Preview
+
+![Calculator Screenshot](images/calculator.png)
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone <repo-url>
+cd calculator
+```
+
+Install dependencies:
+
+```bash
+pip install PySide6
+```

@@ -3,7 +3,20 @@ from .ui_mainwindow import Ui_MainWindow        # ready-made app framework
 from src.calc import Calculator
 
 class MainWindow(QMainWindow):
+    """
+    Main calculator window.
+    Handles GUI initialization, button signal connections,
+    and communication between the user interface and
+    calculator logic.
+    """
+
     def __init__(self):
+        """
+        Initialize the main window and connect UI events.
+        Sets up the generated Qt interface, creates the
+        Calculator instance, and connects button signals
+        to their corresponding handlers.
+        """
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
@@ -37,30 +50,61 @@ class MainWindow(QMainWindow):
 
 
     def on_button(self, value):
+        """
+        Handle numeric button input.
+        Updates the display and passes the entered
+        number to the calculator logic.
+        Args:
+            value (int): The digit entered by the user.
+        """
         self.ui.Display.setText(self.ui.Display.text() + str(value))
         self.calc.set_variable(value)
 
 
     def on_operator(self, value):
+        """
+        Handle operator button input.
+        Sends the selected operator to the calculator
+        and updates the display.
+        Args:
+            value (str): The selected operator symbol.
+        """
         self.ui.Display.setText(str(value))
         self.calc.set_operator(str(value))
 
 
     def on_point(self, value):
+        """
+        Handle decimal point input.
+        Adds a decimal point to the current number
+        and updates the display.
+        """
         self.calc.set_point(self.ui.BTN_PT.text())
         self.ui.Display.setText(self.calc.collected)
 
 
     def on_clear_last(self):
+        """
+        Remove the last entered value or operator.
+        Updates both the calculator state and display.
+        """
         self.calc.clear_last_variable()
         self.ui.Display.setText(self.calc.operator)
 
 
     def on_clear_all(self):
+        """
+        Clear the calculator state and display.
+        Resets all stored input and results.
+        """
         self.ui.Display.setText('')
         self.calc.clear()
 
 
     def on_calc(self):
+        """
+        Evaluate the current expression.
+        Calculates the result and displays the output.
+        """
         result = self.calc.calculate()
         self.ui.Display.setText(str(result))
