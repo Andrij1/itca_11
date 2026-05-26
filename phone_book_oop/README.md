@@ -31,6 +31,7 @@ PhoneBook Project
 ├── book.py               # PhoneBook logic (in-memory operations)
 ├── converters.py         # Data converters (JSON / CSV / SQLite)
 ├── storages.py           # Multi-storage system implementation
+├── phonebook.png         # CLI phonebook screenshot
 │
 ├── data/                 # Stored phone book files
 └── tests/                # Pytest test suite
@@ -73,6 +74,10 @@ The application uses a multi-storage architecture:
 - JSON storage
 - CSV storage
 - SQLite database
+
+## Preview
+
+![Phonebook Screenshot](phonebook.png)
 
 ### Behavior
 - Data is loaded on startup
