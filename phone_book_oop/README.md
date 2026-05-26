@@ -79,7 +79,7 @@ The application uses a multi-storage architecture:
 
 ## Preview
 
-![Phonebook Screenshot](phonebook.png)
+<img src="phonebook.png" width="250">
 
 ---
 
