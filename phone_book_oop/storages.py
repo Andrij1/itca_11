@@ -28,7 +28,7 @@ class MultiStorage:
         all_contacts = []
         for storage in self.storages:
             all_contacts.extend(storage.load())
-        return self.contacts_sorted(all_contacts)
+        return self.uniques(all_contacts)
 
 
 class JsonStorage:
