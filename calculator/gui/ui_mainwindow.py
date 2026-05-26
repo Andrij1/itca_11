@@ -26,6 +26,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(364, 382)
         MainWindow.setMinimumSize(QSize(150, 310))
         MainWindow.setMaximumSize(QSize(364, 382))
+        MainWindow.setWindowOpacity(1.000000000000000)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayout_2 = QGridLayout(self.centralwidget)
@@ -187,7 +188,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"CALCULATOR", None))
         self.Display.setText("")
         self.BTN_11.setText(QCoreApplication.translate("MainWindow", u"\u221a", None))
         self.BTN_7.setText(QCoreApplication.translate("MainWindow", u"7", None))
