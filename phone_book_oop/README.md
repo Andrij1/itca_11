@@ -79,7 +79,7 @@ The application uses a multi-storage architecture:
 
 ## Preview
 
-<img src="phonebook.png" width="250">
+<img src="phonebook.png" width="330">
 
 ---
 
