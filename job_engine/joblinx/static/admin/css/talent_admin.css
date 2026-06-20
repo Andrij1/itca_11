@@ -1,0 +1,82 @@
+.joblinx-admin-tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 8px;
+}
+
+.joblinx-admin-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.joblinx-admin-title {
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
+
+.joblinx-admin-section form {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.joblinx-admin-section a.button {
+    text-decoration: none !important;
+}
+
+/* ================================================= */
+/* TALENT FILTER UNDER SEARCH, ABOVE TALENTS, RIGHT  */
+/* ================================================= */
+
+#content-main {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#changelist {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#changelist-filter {
+    float: none !important;
+    position: relative !important;
+
+    width: 10px !important;
+
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    margin-left: auto !important;
+
+    right: 0 !important;
+
+    padding: 5px;
+}
+
+#changelist-filter h2 {
+    text-align: center;
+}
+
+#changelist-form {
+    width: 110% !important;
+}
+
+#changelist-filter {
+    width: 100px !important;
+    min-width: 90px !important;
+    max-width: 90px !important;
+
+    overflow: hidden !important;
+}
+
+#changelist-filter,
+#changelist-filter * {
+    font-size: 0.90em !important;
+}

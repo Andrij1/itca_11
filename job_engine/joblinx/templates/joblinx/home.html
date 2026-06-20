@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBLINX | Home</title>
+    <link class="logo" rel="icon" href="{% static 'image/joblinx_black.png' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style_0706.css' %}">
+
+</head>
+
+<body class="bg-light">
+
+{% load static %}
+
+<!-- HEADER -->
+<header class="job-header">
+
+    <a href="{% static 'image/joblinx.png' %}" target="_blank" class="logo-link">
+        <img src="{% static 'image/joblinx.png' %}" alt="Joblinx Logo" class="job-logo">
+    </a>
+
+    <!-- SIMPLE NAVIGATION -->
+    <nav class="home-nav">
+
+        <a href="{% url 'home' %}">Home</a>
+
+        <a href="{% url 'job_list' %}">
+            Jobs
+        </a>
+
+        <a href="{% url 'about' %}">
+            Talents
+        </a>
+
+        <a href="#bottom">
+            Contacts
+        </a>
+
+    </nav>
+
+</header>
+<!-- HEADER END -->
+
+<!-- NAVIGATION (ANCHORS ONLY) -->
+<nav id="nav">
+    <a href="#top">&#9650;</a>
+    <a href="#jobs">&#9632;</a>
+    <a href="#bottom">&#9660;</a>
+</nav>
+
+<!-- HERO -->
+<section class="home-hero">
+
+    <div class="hero-content">
+
+        <h2>
+            Careers Built Around Opportunity
+        </h2>
+
+        <p>
+            Discover positions that match your skills, ambitions and professional direction.
+        </p>
+
+        <a href="{% url 'job_list' %}" class="btn btn-info btn-lg btn-hero">
+            Explore Jobs
+        </a>
+
+    </div>
+
+</section>
+<!-- HERO END -->
+
+<!-- ABOUT -->
+<main class="container home-main home-ad" id="about">
+
+    <div class="career-card">
+
+        <h3>
+            Professional Growth
+        </h3>
+
+        <p>
+            Careers grow when people have access to meaningful opportunities, supportive teams and practical learning. Joblinx helps connect professionals with employers seeking talent ready to contribute and evolve. Whether beginning a career or pursuing a new direction, consistent exposure to relevant roles can open pathways toward stronger experience, broader skills and long-term professional confidence in changing industries and environments.
+        </p>
+
+    </div>
+
+    <div class="career-card" id="jobs">
+
+        <h3>
+            Meaningful Work
+        </h3>
+
+        <p>
+            Work becomes more rewarding when skills, purpose and collaboration meet. Employers increasingly value adaptability, communication and initiative alongside technical expertise. Joblinx presents opportunities designed to support informed career choices and productive connections. By exploring diverse roles and industries, professionals can identify positions that align with personal values while contributing positively to organisations and communities.
+        </p>
+
+    </div>
+
+    <div class="career-card">
+
+        <h3>
+            Career Possibilities
+        </h3>
+
+        <p>
+            Professional journeys rarely follow a single path. New technologies, changing markets and evolving organisations create fresh possibilities for development and transition. Joblinx supports discovery by presenting accessible career information and opportunities across different sectors. With preparation, curiosity and persistence, professionals can continue building experience and identifying positions that support both immediate goals and future ambitions.
+        </p>
+
+    </div>
+
+</main>
+<!-- ABOUT END -->
+
+<!-- HERO BTN -->
+<div class="text-center mt-3">
+    <a href="{% url 'job_list' %}" class="btn btn-info btn-lg btn-hero">
+        Explore Jobs
+    </a>
+</div>
+<!-- HERO BTN END -->
+
+<!-- ================= FOOTER ================= -->
+<footer class="job-footer" id="bottom">
+
+    <div class="job-footer-inner">
+
+        <div class="job-footer-col">
+
+            <div>
+                📱
+                <a href="tel:+380961473258">
+                    +380961473258
+                </a>
+            </div>
+
+            <div>
+                🚇 @joblinxters
+            </div>
+
+        </div>
+
+        <div class="job-footer-col">
+
+            <div>
+                ✉️
+                <a href="mailto:joblinxters@gmail.com?subject=JobLinx Inquiry">
+                    joblinxters@gmail.com
+                </a>
+            </div>
+
+            <div>
+                🌍 Kyiv, Ukraine
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="job-footer-bottom">
+        © 2026 All rights reserved
+    </div>
+
+</footer>
+<!-- FOOTER END -->
+
+</body>
+</html>

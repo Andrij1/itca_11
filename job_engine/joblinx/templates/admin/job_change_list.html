@@ -1,0 +1,99 @@
+{% extends "admin/change_list.html" %}
+
+{% block content_title %}{% endblock %}
+
+{% block search %}{% endblock %}
+
+{% block object-tools %}
+
+<style>
+    .joblinx-admin-tools {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 14px;
+        padding: 8px;
+    }
+
+    .joblinx-admin-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 6px;
+    }
+
+    .joblinx-admin-title {
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .joblinx-admin-section form {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-center;
+    }
+
+    .joblinx-admin-section a.button {
+        text-decoration: none !important;
+    }
+</style>
+
+<div class="joblinx-admin-tools">
+
+    <div class="joblinx-admin-section">
+        <div class="joblinx-admin-title">Search Jobs</div>
+
+        <form method="get">
+            <input type="text"
+                   name="q"
+                   placeholder="Search jobs..."
+                   value="{{ request.GET.q|default:'' }}">
+
+            <button type="submit" class="button">Search</button>
+
+            <a href="{% url 'admin:joblinx_job_changelist' %}" class="button">
+                Reset Search
+            </a>
+        </form>
+    </div>
+
+    <div class="joblinx-admin-section">
+        <div class="joblinx-admin-title">Rank Jobs</div>
+
+        <form method="get">
+
+            {% if request.GET.q %}
+                <input type="hidden" name="q" value="{{ request.GET.q }}">
+            {% endif %}
+
+            <input type="text" name="rank_role"
+                   placeholder="Role / Custom Role (any)"
+                   value="{{ request.GET.rank_role|default:'' }}">
+
+            <input type="text" name="rank_work_mode"
+                   placeholder="Mode (remote, onsite, hybrid, na)"
+                   value="{{ request.GET.rank_work_mode|default:'' }}">
+
+            <input type="text" name="rank_seniority"
+                   placeholder="Seniority (junior, middle, senior)"
+                   value="{{ request.GET.rank_seniority|default:'' }}">
+
+            <input type="text" name="rank_posted"
+                   placeholder="Posted days (0, ≤3, more)"
+                   value="{{ request.GET.rank_posted|default:'' }}">
+
+            <button type="submit" class="button">Apply Ranking</button>
+
+            <a href="{% url 'admin:joblinx_job_changelist' %}?reset_ranking=1{% if request.GET.q %}&q={{ request.GET.q|urlencode }}{% endif %}"
+               class="button">
+                Reset Ranking
+            </a>
+        </form>
+    </div>
+
+</div>
+
+{{ block.super }}
+
+{% endblock %}

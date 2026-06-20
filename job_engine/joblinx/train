@@ -1,0 +1,25 @@
+from django.shortcuts import render, redirect
+from .models import Job
+from .services.ranking import JobRankingEngine
+from django.db.models import Q
+
+def job_list(request):
+    query = request.GET.get("q", "")
+
+    jobs = Job.objects.all()
+
+    if query:
+        jobs = jobs.filter(
+            Q(title__icontains=query) |
+            Q(company__icontains=query) |
+            Q(location__icontains=query) |
+            Q(mode__icontains=query) |
+            Q(salary__icontains=query) |
+            Q(id__icontains=query) |
+            Q(score__icontains=query)
+        )
+
+    return render(request, "joblinx/jobs.html", {
+        "jobs": jobs,
+        "query": query
+    })

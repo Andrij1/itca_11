@@ -1,0 +1,32 @@
+{% extends "admin/change_list.html" %}
+
+{% block content_title %}{% endblock %}
+{% block search %}{% endblock %}
+
+{% block object-tools %}
+
+<div class="joblinx-admin-tools">
+
+    <div class="joblinx-admin-section">
+        <div class="joblinx-admin-title">Search Talents</div>
+
+        <form method="get">
+            <input type="text"
+                   name="q"
+                   placeholder="Search talents..."
+                   value="{{ request.GET.q|default:'' }}">
+
+            <button type="submit" class="button">Search</button>
+
+            <a href="{% url 'admin:joblinx_talentsubmission_changelist' %}"
+               class="button">
+                Reset Search
+            </a>
+        </form>
+    </div>
+
+</div>
+
+{{ block.super }}
+
+{% endblock %}
