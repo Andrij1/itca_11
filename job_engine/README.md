@@ -26,7 +26,7 @@ The platform focuses on:
 
 ### 🌐 Public Job Listings Interface
 
-![Job Listings UI](static/image/joblistings_ui.png)
+![Job Listings UI](./static/image/joblistings_ui.png)
 
 The public job listings page allows users to:
 
@@ -41,7 +41,7 @@ The public job listings page allows users to:
 
 ### 🔐 Admin Job Dashboard
 
-![Admin Dashboard](static/image/admin_dashboard.png)
+![Admin Dashboard](./static/image/admin_dashboard.png)
 
 The admin dashboard allows the project owner to:
 
