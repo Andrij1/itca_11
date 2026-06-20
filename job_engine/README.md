@@ -54,13 +54,6 @@ The admin dashboard allows the project owner to:
 - Manage talent submissions
 - Review source status
 
-> Place screenshots in:
->
-> ```text
-> static/image/joblistings_ui.png
-> static/image/admin_dashboard.png
-> ```
-
 ---
 
 ## 🛠 Technology Stack
