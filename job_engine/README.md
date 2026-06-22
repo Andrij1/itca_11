@@ -26,7 +26,11 @@ The platform focuses on:
 
 ### 🌐 Public Job Listings Interface
 
-![Job Listings UI](./joblinx/static/image/joblistings_ui.png)
+![Job Listings UI](./joblinx/static/image/jobs_aggregator_home_ui.png)
+![Job Listings UI](./joblinx/static/image/jobs_aggregator_oblistings_ui.png)
+![Job Listings UI](./joblinx/static/image/jobs_aggregator_talents_ui.png)
+![Job Listings UI](./joblinx/static/image/jobs_aggregator_talents_form_ui.png)
+
 
 The public job listings page allows users to:
 
@@ -41,7 +45,11 @@ The public job listings page allows users to:
 
 ### 🔐 Admin Job Dashboard
 
+![Admin Dashboard](./joblinx/static/image/admin_main_dashboard.png)
 ![Admin Dashboard](./joblinx/static/image/admin_jobs_dashboard.png)
+![Admin Dashboard](./joblinx/static/image/admin_talents_dashboard.png)
+![Admin Dashboard](./joblinx/static/image/admin_employers_dashboard.png)
+
 
 The admin dashboard allows the project owner to:
 
@@ -308,7 +316,14 @@ job_engine/
 │       ├── joblinx.png
 │       ├── joblinx_black.png
 │       ├── joblistings_ui.png
-│       └── admin_jobs_dashboard.png
+│       ├── joblistings_ui.png
+│       ├── joblistings_ui.png
+│       ├── joblistings_ui.png
+│       ├── joblistings_ui.png
+│       ├── admin_main_dashboard.png
+│       ├── admin_jobs_dashboard.png
+│       ├── admin_talents_dashboard.png
+│       └── admin_employers_dashboard.png
 │
 ├── db.sqlite3
 │
