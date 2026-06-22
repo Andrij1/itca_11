@@ -27,7 +27,7 @@ The platform focuses on:
 ### 🌐 Public Job Listings Interface
 
 ![Job Listings UI](./joblinx/static/image/jobs_aggregator_home_ui.png)
-![Job Listings UI](./joblinx/static/image/jobs_aggregator_oblistings_ui.png)
+![Job Listings UI](./joblinx/static/image/jobs_aggregator_joblistings_ui.png)
 ![Job Listings UI](./joblinx/static/image/jobs_aggregator_talents_ui.png)
 ![Job Listings UI](./joblinx/static/image/jobs_aggregator_talents_form_ui.png)
 
