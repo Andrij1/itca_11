@@ -315,11 +315,10 @@ job_engine/
 │   └── image/
 │       ├── joblinx.png
 │       ├── joblinx_black.png
-│       ├── joblistings_ui.png
-│       ├── joblistings_ui.png
-│       ├── joblistings_ui.png
-│       ├── joblistings_ui.png
-│       ├── joblistings_ui.png
+│       ├── jobs_aggregator_home_ui.png
+│       ├── jobs_aggregator_joblistings_ui.png
+│       ├── jobs_aggregator_talents_ui.png
+│       ├── jobs_aggregator_talents_form_ui.png
 │       ├── admin_main_dashboard.png
 │       ├── admin_jobs_dashboard.png
 │       ├── admin_talents_dashboard.png
