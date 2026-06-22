@@ -41,7 +41,7 @@ The public job listings page allows users to:
 
 ### 🔐 Admin Job Dashboard
 
-![Admin Dashboard](./joblinx/static/image/admin_dashboard.png)
+![Admin Dashboard](./joblinx/static/image/admin_jobs_dashboard.png)
 
 The admin dashboard allows the project owner to:
 
@@ -308,7 +308,7 @@ job_engine/
 │       ├── joblinx.png
 │       ├── joblinx_black.png
 │       ├── joblistings_ui.png
-│       └── admin_dashboard.png
+│       └── admin_jobs_dashboard.png
 │
 ├── db.sqlite3
 │
